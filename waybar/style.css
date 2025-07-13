@@ -1,0 +1,86 @@
+* {
+  font-family: BerkeleyMono, mono;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+window#waybar {
+  background-color: transparent;
+  color: #d8dee9;
+}
+
+window#waybar > box {
+    background: rgba(46, 52, 64, 0.5);
+    box-shadow: 1 1 2 1px #202020;
+}
+
+#workspaces button {
+  color: #d8dee9;
+  border-radius: 3px;
+}
+
+#workspaces button.active {
+  color: #d8dee9;
+  background: #434c5e;
+}
+
+#workspaces button.focused {
+  color: #d8dee9;
+  background: #434c5e;
+}
+
+#workspaces button.urgent {
+  color: #bf616a;
+  background: #d8dee9;
+}
+
+#workspaces button:hover {
+  background: #2e3440;
+  color: #d8dee9;
+}
+
+#date,
+#battery,
+#clock,
+#pulseaudio,
+#workspaces,
+#window,
+#language,
+#temperature,
+#text {
+  margin: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0px 10px 0px 10px;
+  border-radius: 16px;
+  background: #2e3440;
+}
+
+#pulseaudio {
+  margin-right: 4px;
+  color: #d8dee9;
+}
+
+#bluetooth {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  color: #d8dee9;
+  background: #2e3440;
+  margin: 5px;
+  margin-left: 0px;
+  margin-right: 5px;
+  padding: 0px 10px 0px 10px;
+}
+
+#network {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  color: #d8dee9;
+  background: #2e3440;
+  margin: 5px;
+  margin-left: 5px;
+  margin-right: 0px;
+  padding: 0px 10px 0px 10px;
+  border-right: 2px solid #3B4252;
+}
+

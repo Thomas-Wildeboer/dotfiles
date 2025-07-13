@@ -1,0 +1,60 @@
+* {
+	font-family: "BerkeleyMono", monospace;
+}
+
+window {
+	border-radius: 0px;
+	background: transparent;
+	border: 5px;
+	border-color: #A3BE8C;
+}
+
+#input {
+	margin: 5px;
+	border-radius: 16px;
+	border: none;
+	background-color: #2E3440;
+	color: white;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+#input:focus {
+	border: 1px solid #5E81AC;
+	box-shadow: none;
+}
+
+#inner-box {
+	border-radius: 16px;
+	background-color: #383C4A;
+}
+
+#outer-box {
+	opacity: 0.9;
+	border-radius: 16px;
+	margin: 2px;
+	padding: 10px;
+	background-color: #373C4A;
+	border: 2px solid #8FBCBB;
+}
+
+#scroll {
+	margin: 5px;
+}
+
+#text {
+	padding: 4px;
+	color: white;
+}
+
+row {
+	background-color: #2E3440;
+}
+
+#entry:selected {
+	background-color: #4C566A;
+}
+
+#text:selected {
+	background: transparent;
+}
