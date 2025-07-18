@@ -85,11 +85,11 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='nvim'
 # fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# export ARCHFLAGS="-arch $(uname -m)"
 
 # Set personal aliases, overriding those provided by Oh My Zsh libs,
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
@@ -105,4 +105,9 @@ source $ZSH/oh-my-zsh.sh
 
 eval "$(starship init zsh)"
 
-neofetch
+export GTK_THEME=Adwaita-dark
+export GTK_APPLICATION_PREFER_DARK_THEME=1
+export XDG_CURRENT_DESKTOP=GNOME
+export GDK_BACKEND=wayland
+
+test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
