@@ -4,7 +4,17 @@
   "height": 30,
   "modules-left": ["hyprland/workspaces", "clock"],
   "modules-center": ["custom/activewindow"],
-  "modules-right": ["pulseaudio", "network", "bluetooth"],
+  "modules-right": ["pulseaudio", "cpu", "memory", "network", "bluetooth"],
+  "memory": {
+		"format": " {}%",
+		"format-alt": " {used}/{total} GiB",
+		"interval": 5,
+	},
+	"cpu": {
+		"format": " {usage}%",
+		"format-alt": " {avg_frequency} GHz",
+		"interval": 5,
+	},
   "network": {
     "format-wifi": "  {signalStrength}%",
     "format-ethernet": "{ipaddr}/{cidr}",
